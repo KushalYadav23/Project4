@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title> Healthcare Application </title>
+        <link rel = "stylesheet" type = "text/css" href = "{{ url_for('static', filename = 'css/css_For_index.css') }}">
+        <!--<link rel = "stylesheet" type = "text/css" href = "/static/css/css_For_index.css"/>-->
+    </head>
+    <body>
+        <div class="header">
+            <div class = "logo">
+                <img src = "/static/image/Logo.jpg" alt = "Logo" width = "70" height = "60">
+            </div>
+            <div class = "TextV">
+                Healthcare Application 
+            </div>
+            <div class = "Textb">
+                for Mental Health
+            </div>
+        </div>
+        <div class = "left">
+            <img src = "/static/image/Happy.jpg" alt = "Theme" width = "100%" height = "80%">
+        </div>    
+        <div class="right">
+            <ul class="rright">
+                <li><p>Patient Details</p></li>
+            <!--<div class = "mental_form">-->  
+                <form action ="{{ url_for('predict')}}" method="post"> 
+                    <table>
+
+                        <tr>
+                            <td><label>Age:</label></td>
+                            <td><input type="number" min="18" max="72" name="Age" placeholder="Age " required ="required" /></td>
+                        </tr>
+                        <tr>
+                            <td><label>Gender:</label></td>
+                            <td><select id="Gender" name="Gender"><option value=0>Female</option><option value=1>Male</option></select> &nbsp;&nbsp;</td>
+                            
+                        </tr>
+                        <tr>
+                            <td><label for ="family_history">Family History:</label></td>
+                            <td><select id="family_history" name="family_history"><option value=0>No</option><option value=1>Yes</option></select> &nbsp;&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><label>Benefits:</label></td>
+                            <td><select id="benefits" name="benefits"><option value=0>Don't Know</option><option value=1>No</option><option value=1>Yes</option></select> &nbsp;&nbsp;</td>
+                        <tr>
+                            <td><label for ="care_options">Care Options:</label></td>
+                            <td><select id="care_options" name="care_options"><option value=0>No</option><option value=1>Not Sure</option><option value=2>Yes</option></select> &nbsp;&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><label for ="anonymity">Anonymity:</label></td>
+                            <td><select id="anonymity" name="anonymity"><option value=0>Don't Know</option><option value=1>No</option><option value=2>Yes</option></select> &nbsp;&nbsp;</td>
+                        <tr>
+                            <td><label for ="leave">Leave:</label></td>
+                            <td><select id="leave" name="leave"><option value=0>Don't Know</option><option value=1>Somewhat difficult</option><option value=2>Somewhat easy</option><option value=3>Very difficult</option><option value=4>Very easy</option></select> &nbsp;&nbsp;</td> 
+                        </tr>  
+                        <tr>
+                            <td><label for ="work_interfere">Work Interface:</label></td>
+                            <td><select id="leave" name="work_interfere"><option value=0>Don't know</option><option value=1>Never</option><option value=2>Often</option><option value=3>Rarely</option><option value=4>Sometimes</option></select> &nbsp;&nbsp;</td> 
+                        </tr> 
+                            <td><button type ="submit" id="button" >Submit</button></td>
+                            <td></td>
+                        </tr>
+                    </table>                    
+                </form>
+            <!--</div>-->                                   
+                <br>
+
+                <br>
+
+                <br>
+            </ul>
+        </div>
+        <br>
+        <div class="footer"><p>Kushal Yadav</p></div>
+    </body>
+</html>

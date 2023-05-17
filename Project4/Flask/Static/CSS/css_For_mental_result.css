@@ -1,0 +1,54 @@
+body{
+    background: #EDFBF5;
+    color: #125447;
+    margin: 0;
+}
+.header{
+    padding: 10;
+    background: #1abc9c;
+    color: white;
+    width: 100%;
+}
+.TextV{
+    display: inline;
+    font-size: 50px;
+    margin-left: 80px;
+}
+.logo {
+    float: left;
+    margin-left: 150px;
+}
+.footer {
+    padding: 8;
+    clear: both;
+    bottom: 0;
+    width: 100%;
+    background-color: #1abc9c;
+    color: white;
+    text-align: center;
+}
+.pre{
+    display: inline-block;
+
+    padding: 10;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 1700;
+    width: 55%;
+    background-color: #F0F0F0;
+}
+#preimage{
+    float: right;
+}
+.recom{
+    float: right;
+    margin-right: 50px;
+    padding: 10;
+    height: 500;
+    width: 30%;
+    background-color: #F0F0F0;
+}
+#doctor_image{
+    float: left;
+    margin-right: 30;
+}
